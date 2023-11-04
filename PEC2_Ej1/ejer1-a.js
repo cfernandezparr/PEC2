@@ -27,10 +27,10 @@ const findOne = (list, { key, value }, { onSuccess, onError }) => {
   ];
   
   console.log('findOne success'); //se muestra mensaje por consola.
-  findOne(users, { key: 'name', value: 'Carlos' }, { onSuccess, onError }); //Se ejecuta la función findOne con el value Carlos que dará un resultado satisfactorio.
+  findOne(users, { key: 'name', value: 'Carlos' }, { onSuccess, onError }); //Se llama a la función findOne con el value Carlos que dará un resultado satisfactorio.
   
   console.log('findOne error'); //se muestra mensaje por consola.
-  findOne(users, { key: 'name', value: 'Fermin' }, { onSuccess, onError }); //Se ejecuta la función findOne con el value Fermin que dará un resultado de error.
+  findOne(users, { key: 'name', value: 'Fermin' }, { onSuccess, onError }); //Se llama a la función findOne con el value Fermin que dará un resultado de error.
   
   /*
   findOne success
