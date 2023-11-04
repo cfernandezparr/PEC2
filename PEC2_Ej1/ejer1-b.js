@@ -14,19 +14,19 @@ const findOne = (list, { key, value }) => {
   
   const users = [  // Se declara el array con los objetos user.
     {
-      name: 'Carlos', //Clave
-      rol: 'Teacher' //Valor
+      name: 'Carlos', //Clave.
+      rol: 'Teacher' //Valor.
     },
     {
-      name: 'Ana', //Clave
-      rol: 'Boss' //Valor
+      name: 'Ana', //Clave.
+      rol: 'Boss' //Valor.
     }
   ];
   
   console.log('findOne success'); //se muestra mensaje por consola.
   
-  findOne(users, { key: 'name', value: 'Carlos' }) //llamada a la funcion findOne
-    .then(element => {                             //Se utiliza .then para manejar el resultado satisfactorio de busqueda. 
+  findOne(users, { key: 'name', value: 'Carlos' }) //llamada a la funcion findOne.
+    .then(element => {                             //Se utiliza .then para manejar el resultado satisfactorio de búsqueda. 
         console.log (`user: ${element.name}`);     //Se muestra mensaje con el nombre del usuario por pantalla.
     })
 
@@ -40,8 +40,8 @@ const findOne = (list, { key, value }) => {
   console.log('findOne error'); //se muestra mensaje por consola.
 
 
-  findOne(users, { key: 'name', value: 'Fermin' }) //llamada a la funcion findOne.
-  .then(element => {                               //Se utiliza .then para manejar el resultado satisfactorio de busqueda. 
+  findOne(users, { key: 'name', value: 'Fermin' }) //llamada a la función findOne.
+  .then(element => {                               //Se utiliza .then para manejar el resultado satisfactorio de búsqueda. 
     console.log (`user: ${element.name}`);         //Se muestra mensaje con el nombre del usuario por pantalla.
     })
 
